@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario HTML5</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        /*Cuando quiero que un estilo prevalezca sobre los demas -> !IMPORTANT*/
+        body{
+            font-size: 1.1em;}
+        input{
+            font-size: 1.1em;}
+        /*Se puende agrupar por comas los tipos de input que queramos*/
+        input[type=submit]{
+            background-color:red;}
+        /*Sirve para buscar una palabra dentro del input*/
+        input[value^=Borrar]{
+            background-color:blue;}
+        /*Orden recomendado para modificar links link,visited,hover,active(lvha)*/
+        /*Lo mejor es agruparlos de la siguiente manera*/
+        a:link, a:visited{
+            color: midnightblue;
+            text-decoration:none;}
+        a:hover, a:active{
+            color:brown;
+            text-decoration:double;}
+        p::first-letter{
+            color:blue;
+            font-size: 2em;
+            text-transform:capitalize;}
+    </style>
+</head>
+<body>
+    <form action="prueba" method="get">
+        <label for="txtDni">DNI: </label>
+        <input type="text" name="txtDni" id="txtDni" pattern="^[0-9]{8}[A-Z]$" />
+        <!-- Dentro del pattern: Para que sean entre 5 y 8 numeros {5,8}, para que haya un minimo {7,} -->
+        <br />
+        <label for="txtEmail">Email: </label>
+        <input type="email" name="txtEmail" id="txtEmail" required="required" placeholder="Escribe tu email" />
+        <br />
+        <label for="txtColor">¿Cual es tu color favorito?</label>
+        <input type="color" name="txtColor" id="txtColor" required="required" placeholder="Elige tu color" />
+        <br />
+        <label for="txtFecha">¿Cuando es tu cumpleaños?</label>
+        <input type="date" name="txtFecha" id="txtFecha" required="required" placeholder="Elige una fecha" />
+        <br />
+        <label for="txtEdad">¿Cuantos años tienes?</label>
+        <input type="number" name="txtEdad" id="txtEdad" required="required" placeholder="Edad" min="18" max="99"/>
+        <br />
+        <a href="http://www.w3schools.com/">Mira este enlace</a>
+        <br />
+        <p>Primero</p>
+        <p>Segundo</p>
+        <p>Tercero</p>
+        <input type="button" value="Pulsa aqui!" />
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Borrar" />
+    </form>
+</body>
+</html>

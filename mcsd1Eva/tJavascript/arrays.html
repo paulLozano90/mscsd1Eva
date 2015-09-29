@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script>
+        var notas = new Array(5);
+        var nombres = []
+
+        notas[0] = 5;
+        notas[1] = 2;
+        notas[2] = 7;
+        notas[3] = 10;
+        notas[4] = 4;
+
+        nombres[0] = "Alvaro";
+        nombres[1] = "Ruben";
+        nombres[2] = "Jose";
+        nombres[3] = "Antonio";
+        nombres[4] = "Mario";
+
+        for (var i = 0; i < notas.length; i++) {
+            document.write(notas[i] + "<br />");
+        }
+        for (var i = 0; i < nombres.length; i++) {
+            document.write(nombres[i] + "<br />");
+        }
+
+        //notas.sort();
+        //nombres.sort();
+
+        //for (var i = 0; i < notas.length; i++) {
+        //    document.write(notas[i] + "<br />");
+        //}
+        //for (var i = 0; i < nombres.length; i++) {
+        //    document.write(nombres[i] + "<br />");
+        //}        
+
+        //Posicion, elementos a eliminar, elementos a añadir
+        notas.splice(splice(1, 3, 8, 9, 14));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

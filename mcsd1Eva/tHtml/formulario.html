@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <form action="prueba" method="get">
+        <label for="txtNombre">Nombre: </label>
+        <input type="text" name="txtNombre" id="txtNombre"/>
+        <br />
+        <span>¿Quieres recibir información?</span>
+        <label for="rbBoletinSi">Si</label>
+        <input type="radio" name="rbBoletin" id="rbBoletinSi" value="true" checked="checked"/>
+        <label for="rbBoletinNo">No</label>
+        <input type="radio" name="rbBoletin" id="rbBoletinNo" value="false"/>
+        <br />
+        <span>¿Que lenguaje sabes?</span>
+        <label for="cbHtml">HTML</label>
+        <input type="checkbox" name="cbHtml" id="cbHTML" value="true" />
+        <label for="cbJs">JavaScript</label>
+        <input type="checkbox" name="cbJs" id="cbJs" value="true" />
+        <label for="cbCss">CSS</label>
+        <input type="checkbox" name="cbCss" id="cbCss" value="true" />
+        <br />
+        <label for="dd1Ciudad">¿Donde vives?</label>
+        <select name="dd1Ciudad" id="dd1Ciudad">
+            <option value="1">Madrid</option>
+            <option value="2">Barcelona</option>
+            <option value="3">Sevilla</option>
+            <option value="4">Valencia</option>
+            <option value="5">Bilbao</option>
+        </select>
+        <input type="button" value="Pulsa aqui!" />
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Borrar"/>
+    </form>
+</body>
+</html>

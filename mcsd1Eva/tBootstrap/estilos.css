@@ -1,0 +1,13 @@
+﻿#cabecera{
+    margin-top: 5%;
+}
+/*div{
+    border: 1px red solid;
+}*/
+#colNoticias{    
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.colNot{    
+    padding: 10px 15px 10px 15px;
+}

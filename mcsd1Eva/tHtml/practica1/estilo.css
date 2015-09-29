@@ -1,0 +1,126 @@
+﻿body {
+    margin: 0;
+    font-family: 'Californian FB';
+    font-size: 1.2em;
+}
+nav {
+    width: 100%;
+    background-color: aquamarine;
+    height: 75px;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+nav > ul {
+    margin-left: 12%;
+}
+nav > ul > li {
+    width: 20%;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+li > a:link, li > a:visited {
+    color: midnightblue;
+    text-decoration: none;
+}
+li > a:hover, li > a:active {
+    color: brown;
+    text-decoration: double;
+}
+header {
+    width: 100%;
+    margin-top: 75px;
+    background-color: cadetblue;
+    min-height: 250px;
+}
+#logo {
+    width: 30%;
+    line-height: 150px;
+    float: left;
+    background-color: cadetblue;
+}
+#logo > img {
+    margin-top: 5%;
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+#letras {
+    width: 70%;
+    line-height: 150px;
+    float: right;
+    background-color: cadetblue;
+}
+#letras > h1 {
+    font-size: 3em;
+    color: midnightblue;
+    clear: both;
+}
+#banner1 {
+    clear: both;
+    width: 25%;
+    /*background-color:#049ED1;*/
+    min-height: 200px;
+    float: left;
+}
+#banner1 > div {
+    width: 200px;
+    min-height: 200px;
+    padding: 25px;
+    float: right;
+}
+#banner1 > div > img {
+    width: 100%;
+    height: 100%;
+}
+#banner2 {
+    width: 15%;
+    min-height: 200px;
+    float: right;
+}
+#banner2 > div {
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+    float: left;
+}
+#banner2 > div > img {
+    width: 100%;
+    height: 100%;
+}
+section {
+    width: 60%;
+    min-height: 500px;
+    float: left;
+}
+article {
+    padding: 5%;
+}
+form{
+    padding:75px;
+}
+input {
+    width: 150px;
+    margin-bottom: 20px;
+}
+input[type=submit], input[type=reset]{
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-size: 1.3em;
+    background-color: midnightblue;
+    border-radius: 10px;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: aquamarine;
+    min-height: 80px;
+    clear: both;
+}

@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap</title>
+	<meta charset="utf-8" />
+    <link href="../Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-1.9.1.min.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+    <style type="text/css">
+        div{
+            border: 3px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- md grande, sm mediano y xs pequeño(moviles) -->
+    <div class="row">
+        <div class="col-md-6 col-sm-8 col-xs-12">Izquierda</div>
+        <div class="col-md-6 col-sm-4 col-xs-12">Derecha</div>
+    </div>
+    <br /><br />
+    <!-- Se pone el offset para que omita las columnas que quieras -->
+    <div class="row">
+        <div class="col-md-offset-1 col-md-5 col-sm-offset-1 col-sm-6 col-xs-12">Izquierda</div>
+        <div class="col-md-5 col-sm-4 col-xs-12">Derecha</div>
+    </div>
+    <br /><br />
+    <div class="row">
+        <div class="col-lg-offset-3 col-md-6">
+            <table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th>Uno</th>
+                        <th>Dos</th>
+                        <th>Tres</th>
+                        <th>Cuatro</th>
+                    </tr>                
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>1.1</td>
+                        <td>2.1</td>
+                        <td>3.1</td>
+                        <td>4.1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

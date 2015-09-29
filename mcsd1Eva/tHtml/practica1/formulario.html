@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="estilo.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Texto</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+            <li><a href="video.html">Videos</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div id="logo"><img src="logotipo.png" /></div>
+        <div id="letras"><h1>"Lorem ipsum dolor sit amet..."</h1></div>
+    </header>
+    <aside id="banner1">
+        <div><img src="logotipo.png" /></div>
+        <div><img src="logotipo.png" /></div>
+    </aside>
+    <section>
+        <form action="prueba" method="get">
+            <label for="txtNombre">Nombre:</label>
+            <input type="text" name="txtNombre" id="txtNombre" required="required" placeholder="Escribre tu nombre" />
+            <br />
+            <label for="txtDni">DNI: </label>
+            <input type="text" name="txtDni" id="txtDni" pattern="^[0-9]{8}[A-Z]$" placeholder="Escribre tu DNI" />
+            <br />
+            <label for="txtEmail">Email: </label>
+            <input type="email" name="txtEmail" id="txtEmail" required="required" placeholder="Escribe tu email" />
+            <br />
+            <label for="txtFecha">¿Cuando es tu cumpleaños?</label>
+            <input type="date" name="txtFecha" id="txtFecha" required="required" placeholder="Elige una fecha" />
+            <br />
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Borrar" />
+        </form>
+    </section>
+    <aside id="banner2">
+        <div><img src="logotipo.png" /></div>
+        <div><img src="logotipo.png" /></div>
+    </aside>
+    <footer></footer>
+</body>
+</html>

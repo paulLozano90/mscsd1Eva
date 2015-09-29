@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />    
+</head>
+<body>
+    <h2>Tu agenda:</h2>
+    <div id="agenda"></div>
+
+    <label for="txtNombre">Escribe un nombre</label>
+    <input type="text" id="txtNombre" />
+    <input type="button" value="Agregar" onclick="agregar();" />
+    <br /><br />
+    <label for="txtNombre">Escribe la posicion para borrar</label>
+    <input type="text" id="txtPosicion" />
+    <input type="button" value="Borrar" onclick="borrar();" />
+
+    <script>
+        var agenda = [];
+        var nombres = document.getElementById("agenda");
+        var elemento = document.getElementById("txtNombre");
+        var posicion = document.getElementById("txtPosicion");
+
+        function agregar() {         
+            
+            nombres.innerHTML = "";
+            agenda.push(elemento.value);
+            visualizar();
+
+            elemento.value = "";
+            elemento.focus();
+        }
+
+        function borrar() {            
+            
+            nombres.innerHTML = "";
+            agenda.splice(posicion.value - 1, 1);
+            visualizar();
+
+            posicion.value = "";
+            posicion.focus;
+        }
+
+        function visualizar() {            
+
+            for (var i = 0; i < agenda.length; i++) {
+                nombres.innerHTML += "<p>" + (i + 1) + ". " + agenda[i] + "</p>";
+            }
+        }
+    </script>
+</body>
+</html>

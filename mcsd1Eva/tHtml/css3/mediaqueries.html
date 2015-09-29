@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <style type="text/css">
+        #uno,#dos,#tres{
+            width: 150px;
+            height: 200px;
+            float: left;
+            margin: 50px;
+            border: 5px double blue;
+        }
+        #uno:hover {
+            transform:scale(0.5,1.5);
+        }
+        @media screen and (min-width:700px) and (max-width: 1024px){
+            #uno,#dos,#tres{
+            width: 300px;
+            height: 250px;
+            }
+        }
+        @media screen and (min-width:1024px){
+            #uno,#dos,#tres{
+            width: 450px;
+            height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="uno">Capa uno</div>
+    <div id="dos">Capa dos</div>
+    <div id="tres">Capa tres</div>
+</body>
+</html>

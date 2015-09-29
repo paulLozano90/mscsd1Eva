@@ -1,0 +1,41 @@
+﻿body {
+    margin: 0 auto;
+}
+
+header{
+    width:100%;
+    background-color:red;
+    min-height:200px;
+}
+nav{
+    width:100%;
+    background-color:powderblue;
+    min-height:100px;
+}
+nav > ul > li{
+    float:left;
+    width: 10%;
+    list-style-type:none;
+    font-size:1.5em;
+}
+section{
+    width:70%;
+    background-color:aqua;
+    min-height:500px;
+    float:left;
+}
+aside{
+    width:30%;
+    background-color:forestgreen;
+    min-height:500px;
+    float:right;
+}
+footer{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-color:teal;
+    min-height:80px;
+    clear:both;
+}
