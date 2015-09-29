@@ -29,6 +29,7 @@ var calculo = function (e) {
 }
 
 var ejecutar = (function () {
+
     document.getElementById("btnSuma").onclick = calculo;
     document.getElementById("btnResta").onclick = calculo;
     document.getElementById("btnMulti").onclick = calculo;
