@@ -52,25 +52,3 @@ String.prototype.toUpperCase = function () {
     return "Hola!";
 }
 alert(alumno3.nombre.toUpperCase());
-
-//Herencia
-
-function Persona(nombre, apellidos, edad) {
-
-    this.nombre = nombre || "";
-    this.apellidos = apellidos || "";
-    this.edad = edad || 0;
-}
-
-Alumno = function (nota) {
-    this.nota = nota || 0;
-    this.getNotaTexto = function () {
-        if (this.nota < 5)
-            return "Suspenso"
-        else
-            return "Aprobado"
-    }
-}
-
-Alumno.prototype = new Persona;
-Alumno.prototype.constructor = Alumno;
