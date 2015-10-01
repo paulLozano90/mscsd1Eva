@@ -4,12 +4,11 @@ var url = "https://alumnoscurso.azure-mobile.net/Tables/Alumno/";
 function obtenerDatos() {
 
     var ajax = new XMLHttpRequest();
-    ajax.open("get", url);
 
+    ajax.open("get", url);
     ajax.onreadystatechange = function () {
 
         if (ajax.readyState == 4) {
-
             if (ajax.status >= 200 && ajax.status < 300) {
 
                 var data = JSON.parse(ajax.responseText);

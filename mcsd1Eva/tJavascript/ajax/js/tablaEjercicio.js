@@ -13,20 +13,32 @@ function obtenerDatos() {
             if (ajax.status >= 200 && ajax.status < 300) {
 
                 var data = JSON.parse(ajax.responseText);
-                var salida = "<table>";
 
-                var tabla = document.getElementById("tablaAlumnos");
+                //var salida = "<table>";
 
-                //Azure limita a 50 registros de salida
+                //for (var i = 0; i < data.length; i++) {
+                //    salida += "<tr>";
+                //    salida += "<td>" + data[i].nombre + "</td>";
+                //    salida += "<td>" + data[i].duracion + "</td>";
+                //    salida += "</tr>";
+                //}
+                //salida += "</table>";
+                //document.getElementById("tablaAlumnos").innerHTML = salida;
+
+                var tbody = document.getElementsByTagName("tbody")[0];               
+
                 for (var i = 0; i < data.length; i++) {
-                    salida += "<tr>";
-                    salida += "<td>" + data[i].nombre + "</td>";
-                    salida += "<td>" + data[i].duracion + "</td>";
-                    salida += "</tr>";
-                }
-                salida += "</table>";
-                document.getElementById("tablaAlumnos").innerHTML = salida;
 
+                    var tr = document.createElement("tr");
+                    var tdAlumno = document.createElement("td"); 
+                    var tdDuracion = document.createElement("td");
+
+                    tbody.appendChild(tr);
+                    tr.appendChild(tdAlumno);
+                    tr.appendChild(tdDuracion);
+                    tdAlumno.appendChild(document.createTextNode(data[i].nombre));
+                    tdDuracion.appendChild(document.createTextNode(data[i].duracion));
+                }
             } else {
                 alert("Error de peticion");
                 console.log(ajax.error);
