@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <style type="text/css">
+        #nuevoAlumno, #listaAlumnos {
+            width: 250px;
+            float: left;
+        }
+        input[type=button] {
+            font-size: 1.2em;
+            width: 40px;
+            height: 40px;
+        }
+        input[type=text] {
+            font-size: 1em;
+            width: 150px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="nuevoAlumno">
+        <h2>Nuevos alumnos</h2>
+        <input type="text" id="txtNombre" placeholder="Nombre" />
+        <br /><br />
+        <input type="text" id="txtDuracion" placeholder="Duracion" />
+        <br /><br />
+        <button type="button" id="btnEnviar">Añadir</button>
+    </div>
+    <div id="listaAlumnos">
+        <h2>Lista de alumnos</h2>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Duracion</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaAlumnos"></tbody>
+            </table>
+        </div>
+        <br />
+        <button type="button" id="btnRefrescar">Refrescar</button>
+    </div>
+    <script src="js/tablaEjercicio.js"></script>
+</body>
+</html>

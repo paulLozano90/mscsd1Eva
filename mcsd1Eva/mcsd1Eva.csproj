@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="plantilla.html" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -111,15 +112,28 @@
     <Content Include="tHtml\practica1\logotipo.png" />
     <Content Include="tHtml\practica1\video.html" />
     <Content Include="tHtml\semanticas.html" />
+    <Content Include="tJavascript\ajax\js\tablaCorregida.js" />
+    <Content Include="tJavascript\ajax\js\tablaEjemplo.js" />
+    <Content Include="tJavascript\ajax\js\tablaEjercicio.js" />
+    <Content Include="tJavascript\ajax\tablaCorregida.html" />
+    <Content Include="tJavascript\ajax\tablaEjemplo.html" />
+    <Content Include="tJavascript\ajax\tablaEjercicio.html" />
     <Content Include="tJavascript\arrays.html" />
     <Content Include="tJavascript\condicionales.html" />
+    <Content Include="tJavascript\dom.html" />
+    <Content Include="tJavascript\dom\tablas.js" />
+    <Content Include="tJavascript\dom\tablas.html" />
     <Content Include="tJavascript\ejerGetElement.html" />
     <Content Include="tJavascript\ejerFuncCalculadora.html" />
     <Content Include="tJavascript\funciones.html" />
     <Content Include="tJavascript\getElement.html" />
-    <Content Include="tJavascript\holaMundo.html" />
+    <Content Include="tJavascript\herencia.html" />
+    <Content Include="tJavascript\js\dom.js" />
     <Content Include="tJavascript\js\ejerFuncCalculadora.js" />
     <Content Include="tJavascript\js\funciones.js" />
+    <Content Include="tJavascript\js\herencia.js" />
+    <Content Include="tJavascript\js\objetos.js" />
+    <Content Include="tJavascript\objetos.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        #datos, #operandos {
+            width: 200px;
+            float: left;
+        }
+
+        input[type=button] {
+            font-size: 1.2em;
+            width: 40px;
+            height: 40px;
+        }
+
+        input[type=text] {
+            font-size: 1em;
+            width: 150px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Calculadora</h2>
+    <div id="datos">
+        <label for="txtNum1">Numero 1:</label><br />
+        <input type="text" id="txtNum1" placeholder="Escribe un numero" autofocus />
+        <input type="text" id="operando" disabled /> <br />
+        <label for="txtNum2">Numero 2:</label><br />
+        <input type="text" id="txtNum2" placeholder="Escribe otro numero" />
+        <input type="text" value="=" disabled />
+        <input type="text" id="resultado" disabled />
+    </div>
+    <div id="operandos">
+        <input type="button" id="btnSuma" value="+" />
+        <input type="button" id="btnResta" value="-" /><br />
+        <input type="button" id="btnMulti" value="*" />
+        <input type="button" id="btnDiv" value="/" />
+    </div>
+    <script src="js/dom.js"></script>
+</body>
+</html>
