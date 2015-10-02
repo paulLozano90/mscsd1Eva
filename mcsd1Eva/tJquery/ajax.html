@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Ajax</title>
     <meta charset="utf-8" />
     <link href="../Content/bootstrap-theme.css" rel="stylesheet" />
     <link href="../Content/bootstrap.css" rel="stylesheet" />
     <style type="text/css">
-        .container{
+        .container {
             margin-top: 10%;
         }
         /*div{
@@ -15,16 +15,23 @@
     </style>
 </head>
 <body>
-    <header></header>    
+    <header></header>
     <section class="container">
         <div class="col-md-offset-2 col-md-4">
-            <h1></h1>
+            <h1>Links</h1>
+            <a href="#" id="lnkGet">Get</a><br/>
+            <a href="#" id="lnkGetJson">GetJson</a><br />
+            <a href="#" id="lnkPost">Post</a><br />
+            <a href="#" id="lnkAjax">Ajax</a><br />
+            <a href="#" id="lnkLoad">Load</a>
         </div>
         <div class="col-md-offset col-md-4">
-            <h1></h1>
+            <h1>Resultado</h1>
+            <div id="resultado"></div>
         </div>
     </section>
-    <script src="../Scripts/jquery-1.9.1.min.js"></script>
+    <script src="../Scripts/jquery-2.1.4.min.js"></script>
     <script src="../Scripts/bootstrap.js"></script>
+    <script src="ajax.js"></script>
 </body>
 </html>

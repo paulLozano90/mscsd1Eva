@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Ej-Ajax</title>
+    <meta charset="utf-8" />
+    <link href="../Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <style type="text/css">
+        .container {
+            margin-top: 10%;
+        }
+        #txtBuscar {
+            display: inline;
+            width: 300px;
+        }
+        .btn {
+            top: -1px;
+        }
+        #datosTabla {
+            margin-top: 3%;
+        }
+        /*#datosTabla > tbody > tr > td{
+            width: 
+        }*/
+        /*div{
+            border: 1px solid blue;
+        }*/
+    </style>
+</head>
+<body>
+    <header></header>
+    <section class="container">
+        <div class="col-md-offset-2 col-md-5">
+            <h1>Tabla de datos</h1>
+            <input class="form-control" type="text" id="txtBuscar" placeholder="Buscar..."/>
+            <button type="button" class="btn btn-default glyphicon glyphicon-search" id="btnBuscar"></button>
+            <button type="button" class="btn btn-default glyphicon glyphicon-refresh" id="btnRefrescar"></button>
+            <table id="datosTabla" class="table">
+                <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Duracion</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <button type="button" id="btnCrear" class="btn btn-default ">Crear curso</button>
+        </div>
+        <div id="nuevoRegistro" class="col-md-offset col-md-3">
+            <h1>Nuevo registro</h1>
+            <form role="form">
+                <div class="form-group">
+                    <label for="txtNombre">Nombre: </label>
+                    <input type="text" id="txtNombre" class="form-control" placeholder="Nombre del curso"/>
+                </div>
+                <div class="form-group">
+                    <label for="txtDuracion">Duracion: </label>
+                    <input type="text" id="txtDuracion" class="form-control" placeholder="Duracion del curso" />
+                </div>
+                <button type="submit" id="btnAnadir" class="btn btn-default">Añadir curso</button>
+            </form>
+        </div>
+    </section>
+    <script src="../Scripts/jquery-2.1.4.min.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="ejercicioAjax.js"></script>
+</body>
+</html>
