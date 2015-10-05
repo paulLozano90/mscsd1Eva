@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Inicio</title>
+    <meta charset="utf-8" />
+    <link href="../../Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="../../Content/bootstrap.css" rel="stylesheet" />
+    <style type="text/css">
+        .container {
+            margin-top: 10%;
+        }
+        #clase{
+            width: 760px;
+            height: 530px;
+            border: 1px solid #708090;
+        }
+        .glyphicon-refresh {
+            float: right;
+            width: 760px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <section class="container">
+        <h1 class="text-center">Clases</h1>
+        <div class="col-md-offset-1 col-md-2">
+            <h3 id="usuario"></h3>
+            <h4><em>Coloca tu sitio</em></h4>
+            <form role="form">
+                <div class="form-group">
+                    <label for="txtX">Eje x: </label>
+                    <input type="text" id="txtX" class="form-control" placeholder="50" />
+                </div>
+                <div class="form-group">
+                    <label for="txtY">Eje y: </label>
+                    <input type="text" id="txtY" class="form-control" placeholder="50" />
+                </div>
+                <div class="form-group">
+                    <label for="txtAncho">Ancho: </label>
+                    <input type="text" id="txtAncho" class="form-control" placeholder="100" value="25"/>
+                </div>
+                <div class="form-group">
+                    <label for="txtAlto">Alto: </label>
+                    <input type="text" id="txtAlto" class="form-control" placeholder="100" value="25"/>
+                </div>
+                <div class="form-group">
+                    <label for="txtColor">Color: </label>
+                    <input type="text" id="txtColor" class="form-control" placeholder="blue o #123456" />
+                </div>
+                <button type="button" id="btnEnviar" class="btn btn-default">Enviar</button>
+                <button type="button" id="btnBorrar" class="btn btn-default">Borrar sesion</button>
+            </form>
+            
+        </div>
+        <div class="col-md-8">
+            <button type="button" id="btnRefrescar" class="btn btn-default glyphicon glyphicon-refresh"></button>
+            <canvas id="clase"></canvas>
+        </div>
+    </section>
+    <script src="../../Scripts/jquery-2.1.4.min.js"></script>
+    <script src="../../Scripts/bootstrap.js"></script>
+    <script src="inicio.js"></script>
+</body>
+</html>
