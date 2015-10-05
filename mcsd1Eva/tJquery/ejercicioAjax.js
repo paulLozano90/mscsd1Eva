@@ -7,22 +7,34 @@ $(document).ready(function () {
     $("#btnCrear").click(mostrarRegistro);
     $("#btnAnadir").click(crearCurso);
     $("#btnRefrescar").click(crearTabla);
+
+    //Tambien podemos usar el .bind en vez de
+    //usar el .click para cualquier otro tipo de evento.
+
+    //$("...").bind("click",funcion);
 });
 
 function crearTabla() {
 
     $.getJSON(url, function (curso) {
         $("#datosTabla tbody").html("");
-        $.each(curso, function (i, curso) {
+        $.each(curso, function (i, elemento) {
 
             var fila = "<tr>"
-                    + "<td>" + curso.nombre + "</td>"
-                    + "<td>" + curso.duracion + "</td>"
+                    + "<td>" + elemento.nombre + "</td>"
+                    + "<td>" + elemento.duracion + "</td>"
                     + "<td><button class='btn btn-default btn-curso'>Borrar</button></td>"
                     + "<td><button class='btn btn-default btn-curso'>Modificar</button></td>"
                     + "</tr>";
 
-            $(fila).appendTo("#datosTabla tbody");
+            if (curso === "") {
+                fila = "<p>No hay elementos en la tabla...</p>";
+                $(fila).appendTo("#datosTabla tbody");
+            } else {
+                $(fila).appendTo("#datosTabla tbody");
+            }
+
+            
         });
     });
 }

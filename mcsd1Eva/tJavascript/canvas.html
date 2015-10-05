@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas</title>
+</head>
+<body>
+    <canvas id="micanvas" width="600" height="400"></canvas>
+    <script type="text/javascript">
+        var canvas = document.getElementById("micanvas");
+        var contexto = canvas.getContext("2d");
+
+        //Color
+        contexto.fillStyle = "#ccdf66";
+        //Posicion eje x,z, ancho y alto
+        contexto.fillRect(10, 3, 100, 100);
+
+
+        contexto.strokeStyle = "blue";
+        contexto.moveTo(10, 5);
+        contexto.lineTo(200, 190);
+        contexto.stroke();
+
+        contexto.strokeStyle = "red";
+        contexto.font("40px Arial");
+        contexto.strokeText("Hola Mundo",50,50);
+    </script>
+</body>
+</html>

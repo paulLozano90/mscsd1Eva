@@ -66,6 +66,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\tuxFactory0.jpg" />
+    <Content Include="images\tuxFactory1.jpg" />
+    <Content Include="images\tuxFactory2.jpg" />
+    <Content Include="images\tuxFactory3.png" />
+    <Content Include="images\tuxFactory4.jpg" />
+    <Content Include="images\tuxFactory5.jpg" />
+    <Content Include="images\tuxFactory6.jpg" />
     <Content Include="packages.config" />
     <Content Include="plantilla.html" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
@@ -119,10 +126,17 @@
     <Content Include="tJavascript\ajax\tablaEjemplo.html" />
     <Content Include="tJavascript\ajax\tablaEjercicio.html" />
     <Content Include="tJavascript\arrays.html" />
+    <Content Include="tJavascript\canvas.html" />
     <Content Include="tJavascript\condicionales.html" />
     <Content Include="tJavascript\dom.html" />
     <Content Include="tJavascript\dom\tablas.js" />
     <Content Include="tJavascript\dom\tablas.html" />
+    <Content Include="tJavascript\dragAndDrop.html" />
+    <Content Include="tJavascript\ejercicioClase\inicio.html" />
+    <Content Include="tJavascript\ejercicioClase\inicio.js" />
+    <Content Include="tJavascript\ejercicioClase\registro.html" />
+    <Content Include="tJavascript\ejercicioClase\registro.js" />
+    <Content Include="tJavascript\js\dragAndDrop.js" />
     <Content Include="tJavascript\ejerGetElement.html" />
     <Content Include="tJavascript\ejerFuncCalculadora.html" />
     <Content Include="tJavascript\funciones.html" />
@@ -133,7 +147,9 @@
     <Content Include="tJavascript\js\funciones.js" />
     <Content Include="tJavascript\js\herencia.js" />
     <Content Include="tJavascript\js\objetos.js" />
+    <Content Include="tJavascript\js\sesiones.js" />
     <Content Include="tJavascript\objetos.html" />
+    <Content Include="tJavascript\sesiones.html" />
     <Content Include="tJquery\ajax.html" />
     <Content Include="tJquery\ajax.js" />
     <Content Include="tJquery\ejemplo.html" />
