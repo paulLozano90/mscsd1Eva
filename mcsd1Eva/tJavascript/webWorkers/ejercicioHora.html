@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>WebWorkers</title>
+    <meta charset="utf-8" />
+    <link href="../../Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="../../Content/bootstrap.css" rel="stylesheet" />
+    <style type="text/css">
+        .container {
+            margin-top: 10%;
+        }
+
+        #hora {
+            color: #1e90ff;
+            font-family: tahoma;
+            font-size: 60px;
+        }
+
+        .btn {
+            font-size: 20px;
+            width: 20%;
+            height: 20%;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <section class="container">
+        <h2 class="text-center">Hora local</h2>
+        <p id="hora" class="text-center"></p>
+        <button id="btnCambiar" class="btn btn-default center-block">Cambiar hora</button>
+        <button id="btnReiniciar" class="btn btn-default center-block">Reiniciar</button>
+        <button id="btnParar" class="btn btn-default center-block">Parar</button>
+    </section>
+    <script src="../../Scripts/jquery-2.1.4.min.js"></script>
+    <script src="../../Scripts/bootstrap.js"></script>
+    <script src="ejHoraWorker.js"></script>
+</body>
+</html>

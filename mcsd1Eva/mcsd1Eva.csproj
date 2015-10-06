@@ -136,6 +136,8 @@
     <Content Include="tJavascript\ejercicioClase\inicio.js" />
     <Content Include="tJavascript\ejercicioClase\registro.html" />
     <Content Include="tJavascript\ejercicioClase\registro.js" />
+    <Content Include="tJavascript\geolocalizacion\geo.html" />
+    <Content Include="tJavascript\geolocalizacion\geo.js" />
     <Content Include="tJavascript\js\dragAndDrop.js" />
     <Content Include="tJavascript\ejerGetElement.html" />
     <Content Include="tJavascript\ejerFuncCalculadora.html" />
@@ -150,6 +152,12 @@
     <Content Include="tJavascript\js\sesiones.js" />
     <Content Include="tJavascript\objetos.html" />
     <Content Include="tJavascript\sesiones.html" />
+    <Content Include="tJavascript\webWorkers\ejemplo.html" />
+    <Content Include="tJavascript\webWorkers\ejercicioHora.html" />
+    <Content Include="tJavascript\webWorkers\ejHora.js" />
+    <Content Include="tJavascript\webWorkers\ejHoraWorker.js" />
+    <Content Include="tJavascript\webWorkers\temporizador.js" />
+    <Content Include="tJavascript\webWorkers\webWorker.js" />
     <Content Include="tJquery\ajax.html" />
     <Content Include="tJquery\ajax.js" />
     <Content Include="tJquery\ejemplo.html" />

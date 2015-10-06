@@ -59,6 +59,28 @@ function mostrarSitio() {
     contexto.fillRect(x, y, ancho, alto);
 }
 
+function dibujarSitio(elemento) {
+    
+    var canvas = document.getElementById("clase");
+    var contexto = canvas.getContext("2d");
+
+    contexto.fillStyle = elemento.color;
+    //Posicion eje x,y, ancho y alto
+    contexto.fillRect(elemento.x, elemento.y, elemento.ancho, elemento.alto);
+}
+
+function actualizarClase() {
+    
+    $.get(url, null, function (clase) {
+
+        for (var i = 0; i < clase.length; i++) {
+            console.log(clase[i]);
+            dibujarSitio(clase[i]);
+        }
+    });
+}
+
 document.getElementById("usuario").innerHTML = "Hola, "+localStorage.getItem("nombre") + ":";
 document.getElementById("btnBorrar").addEventListener("click", borrarSesion);
 document.getElementById("btnEnviar").addEventListener("click", guardarSitio);
+document.getElementById("btnRefrescar").addEventListener("click", actualizarClase);
