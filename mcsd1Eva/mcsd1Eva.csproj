@@ -76,6 +76,10 @@
     <Content Include="packages.config" />
     <Content Include="plantilla.html" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="practica\estilo.css" />
+    <Content Include="practica\fondos.jpg" />
+    <Content Include="practica\general.js" />
+    <Content Include="practica\index.html" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
     <Content Include="Scripts\jquery-2.1.4.min.map" />
