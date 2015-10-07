@@ -13,15 +13,18 @@ function lanzarWorker() {
             if (reloj[i] < 10)
                 reloj[i] = "0" + reloj[i];
         }
-
+        
+        document.getElementById("hora").style.color = generarCodigo(6);
         document.getElementById("hora").innerHTML = reloj[0] + ":" + reloj[1] + ":" + reloj[2];
     }
 }
 function parar() {
+
     worker.terminate();
     worker = undefined;
 }
 function reiniciar() {
+
     if (worker == undefined)
         lanzarWorker();
     else
@@ -29,21 +32,16 @@ function reiniciar() {
 }
 function cambiarHora() {
     
-}
 
-function generarCodigo($longitud) {
-    $localizador = '';
-    $cadena = '1234567890abcdefghijklmnopqrstuvwxyz';
-    $maxLogitud = strlen($cadena) - 1;
-    for ($i = 0; $i < $longitud; $i++) {
-        $localizador .= $cadena{mt_rand(0, $maxLogitud)};
-    }
-    return $localizador;
 }
-
 function generarCodigo(longitud) {
+
     var codigo = "";
-    var cadena = "1234567890";
+
+    for (var i = 0; i < longitud; i++) {
+        codigo += Math.floor(Math.random() * longitud);
+    }
+    return "#"+codigo;
 }
 
 lanzarWorker();

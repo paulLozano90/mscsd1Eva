@@ -1,34 +1,21 @@
 ﻿
-var reloj = new Date();
+function reloj() {
 
-var horas = reloj.getHours();
-var minutos = reloj.getMinutes();
-var segundos = reloj.getSeconds();
+    var date = new Date();
 
-function bajar() {
-
-    segundos++;
-
-    if (segundos == 60) {
-        minutos++;
-        segundos = 0;
-        if (minutos == 60) {
-            horas++;
-            minutos = 0;
-            segundos = 0;
-        }
-    }
+    var horas = date.getHours();
+    var minutos = date.getMinutes();
+    var segundos = date.getSeconds();
 
     postMessage(horas + ":" + minutos + ":" + segundos);
-    setTimeout("bajar()", 1000);
+    setTimeout("reloj()", 1000);
 }
 
 self.onmessage = function (evt) {
+
     if (evt.data == "reiniciar") {
-        horas = 0;
-        minutos = 0;
-        segundos = 0;
+        reloj();
     }
 }
 
-bajar();
+reloj();
