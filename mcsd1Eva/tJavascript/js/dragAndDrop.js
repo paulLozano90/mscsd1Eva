@@ -18,12 +18,12 @@ function drop(evt) {
     //document.getElementById("#destino").appendChild(document.getElementById(data));
 }
 
-var imgs = document.querySelectorAll("img");
+var tipos = document.querySelectorAll("img");
 var destino = document.querySelector("#destino");
 var origen = document.querySelector("#origen");
 
-for (var i = 0; i < imgs.length; i++) {
-    imgs[i].addEventListener("dragstart", drag);
+for (var i = 0; i < tipos.length; i++) {
+    tipos[i].addEventListener("dragstart", drag);
 }
 destino.addEventListener("dragover", allowDrop);
 destino.addEventListener("drop", drop);
