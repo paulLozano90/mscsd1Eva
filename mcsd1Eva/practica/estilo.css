@@ -1,25 +1,54 @@
 ﻿
 body {
-    background-image: url('fondos.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    color: #ffffff;
-    font-size: 2.5em;
+    font-size: 2em;
     font-family: PT Sans Narrow;
 }
-
-.container {
+.container{
+    padding-left: 0;
+    padding-right: 0;
+}
+header {
+    font-size: 3.5em;
+    padding: 45px;
+    border: 1px #ddd solid;
+}
+section > .container {
     margin-top: 10%;
 }
-
+.mapas {
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10%;
+}
+img {
+     max-width: 100%;
+     height: auto;
+}
+p {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px #ddd solid;
+    border-radius: 5px 5px;
+    padding: 5% 4% 5% 4%;
+}
 label {
     padding-top: 3%;
     padding-bottom: 3%;
 }
-
+table {
+    margin-top: -2%;
+}
 .registro {
     height: 45px;
-    font-size: 1.1em;
+    font-size: 0.9em;
     width: 100%;
-    padding-top: 4px;
+    padding-top: 2px;
+}
+#destino,#origen {
+    min-height: 150px;
+    padding-bottom: 20%;
 }

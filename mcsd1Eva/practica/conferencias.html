@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Congreso de Microsoft | Conferencias</title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet" type="text/css">
+    <link href="../Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="estilo.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="container text-center">Centro de congresos</header>
+    <nav class="container">
+        <ul class="nav nav-tabs nav-justified">
+            <li><a href="inicio.html">Localizacion</a></li>
+            <li><a href="">Mapa del congreso</a></li>
+            <li class="active"><a href="">Conferencias</a></li>
+            <li><a href="registro.html">Registro participantes</a></li>
+        </ul>
+    </nav>
+    <section class="container">
+        <div class="mapas col-md-offset-1 col-md-5">
+            <h2 class="text-center titulos">Conferencias</h2>
+            <div id="origen">
+                <p id="confe1" class="text-center" draggable="true">Windows 10 y la Universal Windows Platform</p>
+                <p id="confe2" class="text-center" draggable="true">Windows 10 para los profesionales de IT</p>
+                <p id="confe3" class="text-center" draggable="true">Novedades en XAML</p>
+                <p id="confe4" class="text-center" draggable="true">¿Universales en C++? ¿Y sin punteros?</p>
+                <p id="confe5" class="text-center" draggable="true">Unit testing en Windows 10</p>
+                <p id="confe6" class="text-center" draggable="true">Monitoriza tus apps con Application Insights</p>
+            </div>
+        </div>
+        <div class="mapas col-md-5">
+            <h2 class="text-center titulos">Mis conferencias</h2>
+            <div id="destino"></div>
+        </div>
+    </section>
+    <script src="../Scripts/jquery-2.1.4.min.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="conferencias.js"></script>
+</body>
+</html>
